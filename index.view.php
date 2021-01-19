@@ -13,12 +13,11 @@
     </style>
 </head>
 <body>
-    <header>
-
-        <h1>
-            <?= $greeting; ?>
+    <ul>
+        <?php foreach($person as $feature => $val) : ?> 
+                <li><strong><?= $feature; ?></strong> <?= $val; ?></li>
             
-        </h1>
-    </header>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>
